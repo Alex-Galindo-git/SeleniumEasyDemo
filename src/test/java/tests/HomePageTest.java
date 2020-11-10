@@ -21,19 +21,5 @@ public class HomePageTest extends BaseDriver{
         Assert.assertEquals(ActualMessage, CorrectMessageExpected);
     }
 
-    @Test(priority = 1)
-    public void clickCheckBoxesAndValidateSelection() throws Exception {
-        seleniumEasy.clickCheckboxTestMenu();
-        Assert.assertEquals(driver.getCurrentUrl(),( "https://www.seleniumeasy.com/test/basic-checkbox-demo.html"));
-        seleniumEasy.multiCheckBoxTestValidationAndThenClickEachBox();
 
-    }
-    @Test(priority = 2)
-    public void selectDropDownOption() throws Exception {
-        seleniumEasy.selectJapanTest();
-
-
-
-
-    }
 }
